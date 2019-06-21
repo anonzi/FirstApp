@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="title_home">聊天</string>
+    <string name="title_chats">聊天</string>
+    <string name="title_dashboard">联系人</string>
+    <string name="title_contacts">联系人</string>
+    <string name="title_mine">我的</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_chat">在聊天</string>
+    <string name="title_activity_sessions">SessionsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+</resources>
