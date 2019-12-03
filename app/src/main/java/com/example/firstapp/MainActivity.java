@@ -1,6 +1,7 @@
 package com.example.firstapp;
 
 
+import android.support.v7.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 
@@ -36,12 +37,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-
             FragmentTransaction fTransaction = getFragmentManager().beginTransaction();
             hideAllFragment(fTransaction);
             switch (item.getItemId()) {
                 case R.id.navigation_chats:
-//                    mTextMessage.setText(R.string.title_home);
                     if(fg1 == null){
                         fg1 = new ChatsFragment();
                         fTransaction.add(R.id.ly_content,fg1);
@@ -85,8 +84,11 @@ public class MainActivity extends AppCompatActivity {
         fg1 = new ChatsFragment();
         fTransaction.add(R.id.ly_content, fg1);
         fTransaction.commit();
-//        this.requestWindowFeature(getWindow().FEATURE_NO_TITLE);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.show();
+
+//        this.requestWindowFeature(getWindow().FEATURE_NO_TITLE);
 //        btnOne = (Button) findViewById(R.id.button);
 //
 //        btnOne.setOnClickListener(new OnClickListener() {

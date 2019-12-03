@@ -67,7 +67,7 @@ public class ListViewAdapter extends BaseAdapter {
         }
         //绑定数据
 //        zujian.image.setBackgroundResource((Integer) data.get(position).get("image"));
-//        zujian.title.setText((String) data.get(position).get("title"));
+        zujian.title.setText((String) data.get(position).get("title"));
 //        zujian.info.setText((String) data.get(position).get("info"));
         return convertView;
     }
